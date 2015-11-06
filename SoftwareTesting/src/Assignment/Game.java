@@ -6,7 +6,6 @@ public class Game {
 
 	public int rand() {
 		
-		
 		return 0;
 	}
 
