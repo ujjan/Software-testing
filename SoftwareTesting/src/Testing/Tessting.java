@@ -28,4 +28,23 @@ public class Tessting {
 		
 	}
 	
+	@Test
+	public void ShouldCeckIfTheNumberIsGreatorThanZero() {
+		
+		Game aGame = new Game();
+		
+		
+		
+		for(int i =0; i<1000; i++){
+			int number = aGame.rand();
+			if(number <= 0){
+				fail();
+				break;
+			}
+			else
+				System.out.println(number);
+				
+		}
+	}
+	
 }
