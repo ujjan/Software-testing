@@ -1,4 +1,4 @@
-package Assignment;
+package Testing;
 
 import static org.junit.Assert.*;
 
@@ -8,7 +8,8 @@ public class Tessting {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		
+		//Game aGame = new Game();
 	}
 
 }
