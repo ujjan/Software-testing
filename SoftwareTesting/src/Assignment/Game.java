@@ -8,7 +8,7 @@ public class Game {
 		
 		Random number = new Random();
 		
-		int num = number.nextInt(100);
+		int num = 1+number.nextInt(100);
 		
 		return num;
 		
