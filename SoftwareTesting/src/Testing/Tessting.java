@@ -18,7 +18,7 @@ public class Tessting {
 	}
 	
 	@Test
-	public void ShouldCreatTheRandomNumberBetween1And100() {
+	public void ShouldCreatTheRandomNumberLessThan100() {
 		
 		Game aGame = new Game();
 		int number = aGame.rand();
@@ -27,4 +27,5 @@ public class Tessting {
 			fail();
 		
 	}
+	
 }
