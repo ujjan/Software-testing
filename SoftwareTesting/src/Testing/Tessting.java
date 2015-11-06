@@ -35,9 +35,7 @@ public class Tessting {
 				fail();
 				break;
 			}
-			else
-				System.out.println(number);
-				
+			
 		}
 	}
 	
