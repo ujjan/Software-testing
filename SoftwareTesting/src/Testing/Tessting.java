@@ -9,7 +9,8 @@ public class Tessting {
 	@Test
 	public void test() {
 		
-		//Game aGame = new Game();
+		Game aGame = new Game();
+		
 	}
 
 }
