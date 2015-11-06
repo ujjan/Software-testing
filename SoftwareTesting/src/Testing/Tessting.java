@@ -13,6 +13,8 @@ public class Tessting {
 		
 		Game aGame = new Game();
 		
+		int number = aGame.rand();
+		
 	}
 
 }
