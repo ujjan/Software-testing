@@ -46,12 +46,12 @@ public class Tessting {
 	@Test
     public void ShowCheckIfSystemPrintsWelcomeText() throws Exception {
         //Redirect System.out to buffer
-        ByteArrayOutputStream bo = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(bo));
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outputStream));
         Game.wecomeToTheGame();
-        bo.flush();
-        String allWrittenLines = new String(bo.toByteArray()); 
-        assertTrue(allWrittenLines.contains("Something to welcome "));
+        outputStream.flush();
+        String allWrittenLines = new String(outputStream.toByteArray()); 
+        assertTrue(allWrittenLines.contains("welcome to the game please inter your guess between 1 to 99"));
     }
 	
 }
