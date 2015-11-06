@@ -23,7 +23,7 @@ public class Tessting {
 		Game aGame = new Game();
 		int number = aGame.rand();
 		
-		if(number <100)
+		if(number >100)
 			fail();
 		
 	}

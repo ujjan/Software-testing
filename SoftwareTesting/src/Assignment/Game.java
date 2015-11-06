@@ -6,7 +6,12 @@ public class Game {
 
 	public int rand() {
 		
-		return 0;
+		Random number = new Random();
+		
+		int num = number.nextInt(100);
+		
+		return num;
+		
 	}
 
 	
