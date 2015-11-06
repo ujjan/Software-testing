@@ -7,21 +7,18 @@ import org.junit.Test;
 import Assignment.Game;
 
 public class Tessting {
+	
+	Game aGame = new Game();
+	int number = aGame.rand();
 
 	@Test
 	public void ShouldCreatAnInstance() {
 		
-		Game aGame = new Game();
-		
-		int number = aGame.rand();
 		
 	}
 	
 	@Test
 	public void ShouldCreatTheRandomNumberLessThan100() {
-		
-		Game aGame = new Game();
-		int number = aGame.rand();
 		
 		if(number >100)
 			fail();
@@ -31,10 +28,7 @@ public class Tessting {
 	@Test
 	public void ShouldCeckIfTheNumberIsGreatorThanZero() {
 		
-		Game aGame = new Game();
-		
-		
-		
+	
 		for(int i =0; i<1000; i++){
 			int number = aGame.rand();
 			if(number <= 0){
