@@ -2,7 +2,9 @@ package Testing;
 
 import static org.junit.Assert.*;
 
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 
 import org.junit.Test;
@@ -62,12 +64,22 @@ public class Tessting {
     }
 	
 	@Test
-    public void CheckingTheScannerInput () throws Exception {
+	//
+    public void CheckingTheScannerInput() throws Exception {
 		
        Game aGame = Mockito.mock(Game.class);
        Mockito.when(aGame.readTheScanner()).thenReturn(1);
        assertEquals(1, aGame.readTheScanner());
         
     }
+	@Test//(expected = IllegalArgumentException.class)
+	public void CheckingInput(){
+		if(aGame.guess>100 || aGame.gues<0)
+			fail();
+	       
+	        
+	    }
+	
+
 	
 }
