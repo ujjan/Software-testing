@@ -65,8 +65,8 @@ public class Tessting {
     public void Show() throws Exception {
 		
        Game aGame = Mockito.mock(Game.class);
-       Mockito.when(aGame.readLine())
-       .thenReturn("1");
+       Mockito.when(aGame.readTheScanner()).thenReturn(1);
+       assertEquals(1, aGame.readTheScanner());
         
     }
 	
