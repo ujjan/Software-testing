@@ -16,7 +16,7 @@ public class Game {
 
 	public static void wecomeToTheGame() {
 		System.out.println("welcome to the game please "
-				+ "inter your guess between 1 to 99");
+				+ "guess the number between 1 to 99");
 		
 	}
 

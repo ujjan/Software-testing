@@ -29,6 +29,11 @@ public class Tessting {
 		
 	}
 	
+	/**
+	 * checking the random number for 1000 times in a case if the number
+	 * has been generated less then zero.
+	 */
+	
 	@Test
 	public void ShouldCeckIfTheNumberIsGreatorThanZero() {
 		
@@ -37,7 +42,6 @@ public class Tessting {
 			int number = aGame.rand();
 			if(number <= 0){
 				fail();
-				break;
 			}
 			
 		}
@@ -53,8 +57,17 @@ public class Tessting {
         outputStream.flush();
         
         String allWrittenLines = new String(outputStream.toByteArray()); 
-        assertTrue(allWrittenLines.contains("welcome to the game please"
-        		+ " inter your guess between 1 to 99"));
+        assertTrue(allWrittenLines.contains("welcome to the game please "
+				+ "guess the number between 1 to 99"));
+    }
+	
+	@Test
+    public void Show() throws Exception {
+		
+       Game aGame = Mockito.mock(Game.class);
+       Mockito.when(aGame.readLine())
+       .thenReturn("1");
+        
     }
 	
 }
