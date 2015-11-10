@@ -62,7 +62,7 @@ public class Tessting {
     }
 	
 	@Test
-    public void Show() throws Exception {
+    public void CheckingTheScannerInput () throws Exception {
 		
        Game aGame = Mockito.mock(Game.class);
        Mockito.when(aGame.readTheScanner()).thenReturn(1);
