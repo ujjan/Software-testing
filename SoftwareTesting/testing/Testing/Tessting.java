@@ -88,6 +88,12 @@ public class Tessting {
 		assertEquals(aGame.checksum(str), "won");
 		
 	    }
+	@Test
+	public void CheckingTheIfStatementForWinning(){
+		
+		assertEquals(aGame.checksum(Game.mesWon), "Congratulations you Won!");
+		
+	    }
 	
 	
 	
