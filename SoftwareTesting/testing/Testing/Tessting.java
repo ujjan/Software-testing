@@ -73,9 +73,9 @@ public class Tessting {
         
     }
 	@Test//(expected = IllegalArgumentException.class)
-	public void CheckingInput(){
-		if(aGame.guess>100 || aGame.gues<0)
-			fail();
+	public void CheckingTheNumberOfTries(){
+		Game aGame = Mockito.mock(Game.class);
+		Mockito.verify(aGame,Mockito.times(1).numberOfChoices(10));
 	       
 	        
 	    }
