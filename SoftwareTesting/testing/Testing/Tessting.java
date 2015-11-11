@@ -72,21 +72,24 @@ public class Tessting {
 //       assertEquals(1, aGame.readTheScanner());
 //        
 //    }
-	@Test//(expected = IllegalArgumentException.class)
-	public void CheckingTheNumberOfTries(){
-		Game aGame = Mockito.mock(Game.class);
-		aGame.numberOfChoices();
-	 Mockito.verify(aGame , Mockito.times(1)).numberOfChoices();
-	  
-	  assertEquals(10, aGame.numberOfChoices());
-	  
-	        
-	    }
+//	@Test//(expected = IllegalArgumentException.class)
+//	public void CheckingTheNumberOfTries(){
+//		Game aGame = Mockito.mock(Game.class);
+//		aGame.numberOfChoices();
+//	 Mockito.verify(aGame , Mockito.times(1)).numberOfChoices();
+//	  
+//	  assertEquals(10, aGame.numberOfChoices());
+//	  
+//	        
+//	    }
 	@Test
 	public void CheckingTheIfStatement(){
-		assertEquals(aGame.numberOfChoices("won"), "won");
-	        
+		String str = "won";
+		assertEquals(aGame.checksum(str), "won");
+		
 	    }
+	
+	
 	
 	
 
