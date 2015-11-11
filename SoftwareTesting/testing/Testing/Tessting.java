@@ -77,6 +77,9 @@ public class Tessting {
 		Game aGame = Mockito.mock(Game.class);
 		
 	  Mockito.verify(aGame , Mockito.times(1)).numberOfChoices();
+	  
+	  assertEquals(9, aGame.numberOfChoices(i));
+	  
 	       
 	        
 	    }
