@@ -75,7 +75,8 @@ public class Tessting {
 	@Test//(expected = IllegalArgumentException.class)
 	public void CheckingTheNumberOfTries(){
 		Game aGame = Mockito.mock(Game.class);
-		Mockito.verify(aGame,Mockito.times(1).numberOfChoices(10));
+		
+	  Mockito.verify(aGame , Mockito.times(1)).numberOfChoices();
 	       
 	        
 	    }
