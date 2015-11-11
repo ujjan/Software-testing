@@ -63,26 +63,31 @@ public class Tessting {
 				+ "guess the number between 1 to 99"));
     }
 	
-	@Test
-	//
-    public void CheckingTheScannerInput() throws Exception {
-		
-       Game aGame = Mockito.mock(Game.class);
-       Mockito.when(aGame.readTheScanner()).thenReturn(1);
-       assertEquals(1, aGame.readTheScanner());
-        
-    }
+//	@Test
+//	//
+//    public void CheckingTheScannerInput() throws Exception {
+//		
+//       Game aGame = Mockito.mock(Game.class);
+//       Mockito.when(aGame.readTheScanner()).thenReturn(1);
+//       assertEquals(1, aGame.readTheScanner());
+//        
+//    }
 	@Test//(expected = IllegalArgumentException.class)
 	public void CheckingTheNumberOfTries(){
 		Game aGame = Mockito.mock(Game.class);
-		
-	  Mockito.verify(aGame , Mockito.times(1)).numberOfChoices();
+		aGame.numberOfChoices();
+	 Mockito.verify(aGame , Mockito.times(1)).numberOfChoices();
 	  
-	  assertEquals(9, aGame.numberOfChoices(i));
+	  assertEquals(10, aGame.numberOfChoices());
 	  
-	       
 	        
 	    }
+	@Test
+	public void CheckingTheIfStatement(){
+		assertEquals(aGame.numberOfChoices("won"), "won");
+	        
+	    }
+	
 	
 
 	
