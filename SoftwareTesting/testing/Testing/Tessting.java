@@ -104,6 +104,7 @@ public class Tessting {
 		public void CheckingTheNumberOfTries(){
 			Game aGame = Mockito.mock(Game.class);
 			aGame.numberOfChoices();
+			aGame.numberOfChoices();
 		 Mockito.verify(aGame , Mockito.times(2)).numberOfChoices();
 		 
 	        
