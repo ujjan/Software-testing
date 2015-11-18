@@ -100,7 +100,7 @@ public class Tessting {
 		assertTrue(aGame.mes(i, j) == str);
 		
 	}
-	@Test//(expected = IllegalArgumentException.class)
+	@Test
 		public void CheckingTheNumberOfTries(){
 			Game aGame = Mockito.mock(Game.class);
 			aGame.numberOfChoices();
@@ -109,5 +109,6 @@ public class Tessting {
 		 
 	        
 		    }
+		
 	
 }
