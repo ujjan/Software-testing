@@ -42,7 +42,7 @@ public class Tessting {
 	
 		for(int i =0; i<1000; i++){
 			int number = aGame.rand();
-			if(number <= 0){
+			if(number <= 0|| number> 100){
 				fail();
 			}
 			
@@ -72,16 +72,19 @@ public class Tessting {
 //       assertEquals(1, aGame.readTheScanner());
 //        
 //    }
-//	@Test//(expected = IllegalArgumentException.class)
-//	public void CheckingTheNumberOfTries(){
-//		Game aGame = Mockito.mock(Game.class);
-//		aGame.numberOfChoices();
-//	 Mockito.verify(aGame , Mockito.times(1)).numberOfChoices();
-//	  
-//	  assertEquals(10, aGame.numberOfChoices());
-//	  
-//	        
-//	    }
+	
+	
+	
+	@Test//(expected = IllegalArgumentException.class)
+	public void CheckingTheNumberOfTries(){
+		Game aGame = Mockito.mock(Game.class);
+		aGame.numberOfChoices();
+	 Mockito.verify(aGame , Mockito.times(1)).numberOfChoices();
+	  
+	  assertEquals(10, aGame.numberOfChoices());
+	  
+	        
+	    }
 	@Test
 	public void CheckingTheIfStatement(){
 		String str = "won";
@@ -95,9 +98,6 @@ public class Tessting {
 		
 	    }
 	
-	
-	
-	
-
+		
 	
 }
