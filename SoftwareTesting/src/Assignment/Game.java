@@ -14,12 +14,15 @@ public class Game {
 	public static String mesWon2 = "you Won!";
 	public static int num =0;
 	static int guess;
+	
+	
+	
+	
+	
+	
 	public static int rand() {
 		
 		Random number = new Random();
-		
-		
-		
 		num = 1+number.nextInt(100);
 		return num;
 		
@@ -37,17 +40,14 @@ public class Game {
 		for(i=0; i<10; i++){
 			guess = scan.nextInt();
 			
-			if(guess == num)
-				System.out.println(checksum(mesWon2 ));
-			
 		}
-		
 		
 	}
 
-	public static String checksum(String str) {
+public void  print() {
 		
-       return str;
+		System.out.println("hello world");
+       
 		
 	}
 	
