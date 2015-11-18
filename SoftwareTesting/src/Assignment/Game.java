@@ -58,7 +58,8 @@ public String mes(int i, int j) {
 		return "Congrats you won!";
 	else if (i<j)
 		return "Your guess is too loo the number is higher";
-	return null;
+	else
+	return "Your guess is too high the number is low";
 	
 }
 
