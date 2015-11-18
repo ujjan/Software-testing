@@ -11,7 +11,6 @@ import org.junit.Test;
 import org.mockito.Mockito;
 
 import Assignment.Game;
-import pract.Practic;
 
 public class Tessting {
 	
@@ -80,7 +79,7 @@ public class Tessting {
 	@Test
 	public void CheckingTheIfStatementForWinning() {
 		
-		assertTrue(aGame.mes(24, 25) == "Lower");
+		
 		
 		
 	}
