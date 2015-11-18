@@ -72,7 +72,7 @@ public class Tessting {
 		System.setOut(mockStream);
 		
 
-		aGame.print();
+		aGame.print(22,22);
 		Mockito.verify(mockStream).println("hello world");
 		
 	    }
