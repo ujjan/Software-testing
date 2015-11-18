@@ -79,7 +79,7 @@ public class Tessting {
 	@Test
 	public void CheckingTheIfStatementForWinning() {
 		
-		
+		assertTrue(aGame.mes(24, 25) == "Lower");
 		
 		
 	}
