@@ -40,15 +40,16 @@ public class Game {
 		for(i=0; i<10; i++){
 			guess = scan.nextInt();
 			
+			
 		}
 		
 	}
 
-public void  print() {
+public void  print(int guess , int rand ) {
 		
 		System.out.println("hello world");
        
-		
 	}
+
 	
 }

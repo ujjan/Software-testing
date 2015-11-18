@@ -11,6 +11,7 @@ import org.junit.Test;
 import org.mockito.Mockito;
 
 import Assignment.Game;
+import pract.Practic;
 
 public class Tessting {
 	
@@ -67,15 +68,22 @@ public class Tessting {
 	
 
 	@Test
-	public void CheckingTheIfStatementForWinning(){
+	public void checkingIfTheconsoleWritesSomething(){
+		
+		
 		PrintStream mockStream = Mockito.mock(PrintStream.class);
 		System.setOut(mockStream);
-		
-
 		aGame.print(22,22);
 		Mockito.verify(mockStream).println("hello world");
 		
 	    }
+	@Test
+	public void CheckingTheIfStatementForWinning() {
+		
+		assertTrue(aGame.mes(24, 25) == "Lower");
+		
+		
+	}
 	
 		
 	
