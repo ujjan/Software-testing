@@ -83,6 +83,13 @@ public class Tessting {
 		
 		
 	}
+	@Test
+	public void CheckingTheIftheIfElseStatementIsWorking() {
+		
+		assertTrue(aGame.mes(24, 25) == "Your guess is too loo the number is higher");
+		
+		
+	}
 	
 		
 	
