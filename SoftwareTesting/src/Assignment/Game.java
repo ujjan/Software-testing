@@ -39,7 +39,7 @@ public class Game {
 		int i;
 		for(i=0; i<10; i++){
 			guess = scan.nextInt();
-			
+			print(guess , num);
 			
 		}
 		
@@ -49,6 +49,7 @@ public void  print(int guess , int rand ) {
 		
 		System.out.println("hello world");
        
+		mes(guess, rand);
 	}
 
 public String mes(int i, int j) {
