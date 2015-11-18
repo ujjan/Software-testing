@@ -79,22 +79,18 @@ public class Tessting {
 	@Test
 	public void CheckingTheIfStatementForWinning() {
 		
-		assertTrue(aGame.mes(25, 25) == "Congrats you won!");
+		ifElseChecking(22, 22, "Congrats you won!");
+		ifElseChecking(24, 25 , "Your guess is too loo the number is higher");
+
+		ifElseChecking(26, 25 , "Your guess is too high the number is low");
+
 		
 		
 	}
-	@Test
-	public void CheckingTheIftheIfElseStatementIsWorking() {
+
+	public void ifElseChecking(int i, int j, String str){
 		
-		assertTrue(aGame.mes(24, 25) == "Your guess is too loo the number is higher");
-		
-		
-	}
-	@Test
-	public void CheckingTheIftheLastConditionIsWOrking() {
-		
-		assertTrue(aGame.mes(26, 25) == "Your guess is too high the number is low");
-		
+		assertTrue(aGame.mes(i, j) == str);
 		
 	}
 	
