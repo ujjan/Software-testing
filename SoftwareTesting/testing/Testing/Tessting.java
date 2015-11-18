@@ -90,6 +90,13 @@ public class Tessting {
 		
 		
 	}
+	@Test
+	public void CheckingTheIftheLastConditionIsWOrking() {
+		
+		assertTrue(aGame.mes(26, 25) == "Your guess is too high the number is low");
+		
+		
+	}
 	
 		
 	
