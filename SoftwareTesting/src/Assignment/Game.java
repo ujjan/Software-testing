@@ -9,16 +9,18 @@ import java.util.Scanner;
 public class Game {
 	
 	
-	Scanner scan = new Scanner(System.in);
-	
-   
+	static Scanner scan = new Scanner(System.in);
+	public static String mesWon = "Congratulations you Won!";
+	public static String mesWon2 = "you Won!";
+	public static int num =0;
+	static int guess;
 	public static int rand() {
 		
 		Random number = new Random();
 		
 		
 		
-		int num = 1+number.nextInt(100);
+		num = 1+number.nextInt(100);
 		return num;
 		
 	}
@@ -28,34 +30,25 @@ public class Game {
 				+ "guess the number between 1 to 99");
 		
 		
-	}
-
-//	public static int readTheScanner() throws NumberFormatException, IOException {
-//		BufferedReader console = new BufferedReader(new InputStreamReader(
-//	            System.in));
-//	    return Integer.parseInt(console.readLine());
-//	}
-	
-	
-	public static int numberOfChoices(){
+	}	
+	public void numberOfChoices(){
 		
 		int i;
 		for(i=0; i<10; i++){
+			guess = scan.nextInt();
 			
+			if(guess == num)
+				System.out.println(checksum(mesWon2 ));
 			
 		}
 		
-		return i;
 		
+	}
+
+	public static String checksum(String str) {
 		
-		 
+       return str;
 		
 	}
 	
-
-	
-	
-	
-	
-
 }
