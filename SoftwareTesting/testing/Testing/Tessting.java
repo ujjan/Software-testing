@@ -15,10 +15,12 @@ import Assignment.Game;
 public class Tessting {
 	
 	Game aGame = new Game();
+	
 	int number = aGame.rand();
 
 	@Test
 	public void ShouldCreatAnInstance() {
+	
 		
 		
 	}
@@ -40,7 +42,7 @@ public class Tessting {
 	public void ShouldCeckIfTheNumberIsGreatorThanZero() {
 		
 	
-		for(int i =0; i<1000; i++){
+		for(int i =0; i<10; i++){
 			int number = aGame.rand();
 			if(number <= 0|| number> 100){
 				fail();
@@ -63,38 +65,15 @@ public class Tessting {
 				+ "guess the number between 1 to 99"));
     }
 	
-//	@Test
-//	//
-//    public void CheckingTheScannerInput() throws Exception {
-//		
-//       Game aGame = Mockito.mock(Game.class);
-//       Mockito.when(aGame.readTheScanner()).thenReturn(1);
-//       assertEquals(1, aGame.readTheScanner());
-//        
-//    }
-	
-	
-	
-	@Test//(expected = IllegalArgumentException.class)
-	public void CheckingTheNumberOfTries(){
-		Game aGame = Mockito.mock(Game.class);
-		aGame.numberOfChoices();
-	 Mockito.verify(aGame , Mockito.times(1)).numberOfChoices();
-	  
-	  assertEquals(10, aGame.numberOfChoices());
-	  
-	        
-	    }
-	@Test
-	public void CheckingTheIfStatement(){
-		String str = "won";
-		assertEquals(aGame.checksum(str), "won");
-		
-	    }
+
 	@Test
 	public void CheckingTheIfStatementForWinning(){
+		PrintStream mockStream = Mockito.mock(PrintStream.class);
+		System.setOut(mockStream);
 		
-		assertEquals(aGame.checksum(Game.mesWon), "Congratulations you Won!");
+
+		aGame.print();
+		Mockito.verify(mockStream).println("hello world");
 		
 	    }
 	
