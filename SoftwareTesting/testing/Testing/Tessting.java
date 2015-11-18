@@ -5,12 +5,14 @@ import static org.junit.Assert.*;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintStream;
 
 import org.junit.Test;
 import org.mockito.Mockito;
 
 import Assignment.Game;
+
 
 public class Tessting {
 	
@@ -28,10 +30,15 @@ public class Tessting {
 	@Test
 	public void ShouldCreatTheRandomNumberLessThan100() {
 		
-		if(number >100)
-			fail();
+		for(int i =0; i<1000; i++){
+			int number = aGame.rand();
+			if(number >100){
+				fail();
+			}
+		}
 		
 	}
+	
 	
 	/**
 	 * checking the random number for 1000 times in a case if the number
@@ -42,9 +49,9 @@ public class Tessting {
 	public void ShouldCeckIfTheNumberIsGreatorThanZero() {
 		
 	
-		for(int i =0; i<10; i++){
+		for(int i =0; i<1000; i++){
 			int number = aGame.rand();
-			if(number <= 0|| number> 100){
+			if(number <= 0){
 				fail();
 			}
 			
@@ -93,7 +100,13 @@ public class Tessting {
 		assertTrue(aGame.mes(i, j) == str);
 		
 	}
-	
-		
+	@Test//(expected = IllegalArgumentException.class)
+		public void CheckingTheNumberOfTries(){
+			Game aGame = Mockito.mock(Game.class);
+			aGame.numberOfChoices();
+		 Mockito.verify(aGame , Mockito.times(2)).numberOfChoices();
+		 
+	        
+		    }
 	
 }
