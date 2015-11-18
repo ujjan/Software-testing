@@ -51,5 +51,13 @@ public void  print(int guess , int rand ) {
        
 	}
 
+public String mes(int i, int j) {
+	
+	if(i==j)
+		return "Congrats you won!";
+	return null;
+	
+}
+
 	
 }
