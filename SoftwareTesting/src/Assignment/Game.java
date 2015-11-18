@@ -56,6 +56,8 @@ public String mes(int i, int j) {
 	
 	if(i==j)
 		return "Congrats you won!";
+	else if (i<j)
+		return "Your guess is too loo the number is higher";
 	return null;
 	
 }
