@@ -88,7 +88,7 @@ public class Tessting {
 	public void CheckingTheIfStatementForWinning() {
 		
 		ifElseChecking(22, 22, "Congrats you won!");
-		ifElseChecking(24, 25 , "Your guess is too loo the number is higher");
+		ifElseChecking(24, 25 , "Your guess is too low the number is higher");
 
 		ifElseChecking(26, 25 , "Your guess is too high the number is low");
 
@@ -120,6 +120,28 @@ public class Tessting {
 		
 		
 	}
+	@Test
+	public void mockitoWayOFConditionsChacking(){
+		Game aGame = Mockito.mock(Game.class);
+	 Mockito.when(aGame.mes(2, 2)).thenReturn("Congrats you won!");
+	 
+        
+	    }
+	@Test
+	public void mockitoWayOFConditionsChacking2(){
+		Game aGame = Mockito.mock(Game.class);
+	 Mockito.when(aGame.mes(2, 3)).thenReturn("Your guess is too low the number is higher");
+	 
+        
+	    }
+	
+	@Test
+	public void mockitoWayOFConditionsChacking3(){
+		Game aGame = Mockito.mock(Game.class);
+	 Mockito.when(aGame.mes(2, 1)).thenReturn("Your guess is too high the number is low");
+	 
+        
+	    }
 
 		
 	
