@@ -34,7 +34,7 @@ public class Game {
 		
 		
 	}	
-	public void numberOfChoices(){
+public void numberOfChoices(){
 		
 		int i;
 		for(i=0; i<10; i++){
@@ -46,8 +46,6 @@ public class Game {
 	}
 
 public void  print(int guess , int rand ) {
-		
-		System.out.println("hello world");
        
 		mes(guess, rand);
 	}
@@ -61,7 +59,7 @@ public String mes(int i, int j) {
 	else
 	return "Your guess is too high the number is low";
 	
-}
+  }
 
 	
 }
