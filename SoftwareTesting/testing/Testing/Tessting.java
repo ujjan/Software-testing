@@ -70,6 +70,7 @@ public class Tessting {
         String allWrittenLines = new String(outputStream.toByteArray()); 
         assertTrue(allWrittenLines.contains("welcome to the game please "
 				+ "guess the number between 1 to 99"));
+  
     }
 	
 
@@ -109,6 +110,17 @@ public class Tessting {
 		 
 	        
 		    }
+	
+	@Test
+	public void Checkingstubbing() {
+		
+		Game aGame = Mockito.mock(Game.class);
+		Mockito.when(aGame.mes(2, 2)).thenReturn("Congrats you won!");
+
+		
+		
+	}
+
 		
 	
 }
